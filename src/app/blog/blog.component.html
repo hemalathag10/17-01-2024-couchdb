@@ -1,0 +1,31 @@
+<!-- src/app/blog/blog.component.html -->
+
+<div class="container">
+    <h2>Welcome to the Angular CouchDB Blog</h2>
+  
+    <!-- New Post Form -->
+    <form [formGroup]="newPostForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" id="title" formControlName="title" class="form-control" />
+      </div>
+  
+      <div class="form-group">
+        <label for="content">Content:</label>
+        <textarea id="content" formControlName="content" class="form-control"></textarea>
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Add Post</button>
+    </form>
+<!-- blog.component.html -->
+
+<button (click)="filterDocumentsByAuthor()">FILTER</button>
+<button (click)="updateDocument()">UPDATE</button>
+
+      <h3>Blog</h3>
+
+    
+    
+   
+  </div>
+  
